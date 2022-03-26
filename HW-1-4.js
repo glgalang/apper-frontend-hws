@@ -5,11 +5,11 @@
 //Name this file HW1-4.js.
 
 const isPalindrome = (strng) =>{
-    const strngReverse = strng.split('').reverse().join('');
-    return strngReverse === strng
+    const strngReverse = strng.toLowerCase().split('').reverse().join('');
+    return strngReverse === strng.toLowerCase()
     }
 
-console.log(isPalindrome("racecar"))
+console.log(isPalindrome("RacecAr"))
 console.log(isPalindrome("deified"))
 console.log(isPalindrome("civic"))
 console.log(isPalindrome("uwu"))
